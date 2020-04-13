@@ -9,7 +9,7 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
         $installer->startSetup();
         if (!$installer->tableExists('employee_designation')) {
             $table = $installer->getConnection()->newTable(
-                $installer->getTable('employee_designation')
+                $installer->getTable('employee_desig')
             )
                 ->addColumn(
                     'designation_id',
